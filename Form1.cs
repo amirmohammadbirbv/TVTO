@@ -30,12 +30,29 @@ namespace tvto
 
         private void buttonItem3_Click(object sender, EventArgs e)
         {
-            new entesab().ShowDialog();
+            try
+            {
+                new entesab().ShowDialog();
+            }
+            catch(Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
         }
 
         private void ribbonControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonItem4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bar1_ItemClick(object sender, EventArgs e)
+        {
+            new addPerson().ShowDialog();
         }
     }
 }

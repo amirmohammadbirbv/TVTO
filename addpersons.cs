@@ -141,15 +141,15 @@ namespace tvto
         }
         private void dataGridViewX1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = dataGridViewX1.CurrentCell.RowIndex;
-            txtAddres.Text = dataGridViewX1.Rows[index].Cells[6].Value.ToString();
-            txte_mail.Text = dataGridViewX1.Rows[index].Cells[7].Value.ToString();
-            txtFamily.Text = dataGridViewX1.Rows[index].Cells[2].Value.ToString();
-            txtID.Text = dataGridViewX1.Rows[index].Cells[0].Value.ToString();
-            txtMobile.Text = dataGridViewX1.Rows[index].Cells[4].Value.ToString();
-            txtName.Text = dataGridViewX1.Rows[index].Cells[1].Value.ToString();
-            txtNCode.Text = dataGridViewX1.Rows[index].Cells[3].Value.ToString();
-            txtTel.Text = dataGridViewX1.Rows[index].Cells[5].Value.ToString();
+            int index = dataGridEmployee.CurrentCell.RowIndex;
+            txtAddres.Text = dataGridEmployee.Rows[index].Cells[6].Value.ToString();
+            txte_mail.Text = dataGridEmployee.Rows[index].Cells[7].Value.ToString();
+            txtFamily.Text = dataGridEmployee.Rows[index].Cells[2].Value.ToString();
+            txtID.Text = dataGridEmployee.Rows[index].Cells[0].Value.ToString();
+            txtMobile.Text = dataGridEmployee.Rows[index].Cells[4].Value.ToString();
+            txtName.Text = dataGridEmployee.Rows[index].Cells[1].Value.ToString();
+            txtNCode.Text = dataGridEmployee.Rows[index].Cells[3].Value.ToString();
+            txtTel.Text = dataGridEmployee.Rows[index].Cells[5].Value.ToString();
         }
 
         private void cleaner_Click(object sender, EventArgs e)

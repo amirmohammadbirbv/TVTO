@@ -53,7 +53,7 @@
             this.txtTel = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtAddres = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dataGridEmployee = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.eIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.efamilyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.employeeTableAdapter = new tvto.tvto2DataSetTableAdapters.EmployeeTableAdapter();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).BeginInit();
             this.groupPanel2.SuspendLayout();
@@ -391,7 +391,7 @@
             // 
             this.txtMobile.Border.Class = "TextBoxBorder";
             this.txtMobile.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMobile.Location = new System.Drawing.Point(407, 119);
+            this.txtMobile.Location = new System.Drawing.Point(451, 119);
             this.txtMobile.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMobile.MaxLength = 11;
             this.txtMobile.Name = "txtMobile";
@@ -407,7 +407,7 @@
             // 
             this.txtTel.Border.Class = "TextBoxBorder";
             this.txtTel.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTel.Location = new System.Drawing.Point(407, 89);
+            this.txtTel.Location = new System.Drawing.Point(451, 89);
             this.txtTel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTel.MaxLength = 11;
             this.txtTel.Name = "txtTel";
@@ -423,7 +423,7 @@
             // 
             this.txtName.Border.Class = "TextBoxBorder";
             this.txtName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtName.Location = new System.Drawing.Point(407, 10);
+            this.txtName.Location = new System.Drawing.Point(451, 10);
             this.txtName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtName.Name = "txtName";
             this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -438,7 +438,7 @@
             // 
             this.txtAddres.Border.Class = "TextBoxBorder";
             this.txtAddres.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtAddres.Location = new System.Drawing.Point(407, 39);
+            this.txtAddres.Location = new System.Drawing.Point(451, 39);
             this.txtAddres.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAddres.Multiline = true;
             this.txtAddres.Name = "txtAddres";
@@ -447,19 +447,19 @@
             this.txtAddres.Size = new System.Drawing.Size(145, 44);
             this.txtAddres.TabIndex = 2;
             // 
-            // dataGridViewX1
+            // dataGridEmployee
             // 
-            this.dataGridViewX1.AllowUserToAddRows = false;
-            this.dataGridViewX1.AllowUserToDeleteRows = false;
-            this.dataGridViewX1.AllowUserToResizeColumns = false;
-            this.dataGridViewX1.AllowUserToResizeRows = false;
+            this.dataGridEmployee.AllowUserToAddRows = false;
+            this.dataGridEmployee.AllowUserToDeleteRows = false;
+            this.dataGridEmployee.AllowUserToResizeColumns = false;
+            this.dataGridEmployee.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dataGridViewX1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewX1.AutoGenerateColumns = false;
-            this.dataGridViewX1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewX1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridEmployee.AutoGenerateColumns = false;
+            this.dataGridEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridEmployee.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.eIDDataGridViewTextBoxColumn,
             this.enameDataGridViewTextBoxColumn,
             this.efamilyDataGridViewTextBoxColumn,
@@ -468,7 +468,7 @@
             this.ephoneDataGridViewTextBoxColumn,
             this.eaddressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
-            this.dataGridViewX1.DataSource = this.employeeBindingSource;
+            this.dataGridEmployee.DataSource = this.employeeBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -476,19 +476,19 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridViewX1.Location = new System.Drawing.Point(0, 235);
-            this.dataGridViewX1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.dataGridViewX1.Name = "dataGridViewX1";
-            this.dataGridViewX1.ReadOnly = true;
-            this.dataGridViewX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridViewX1.RowHeadersWidth = 51;
-            this.dataGridViewX1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridViewX1.Size = new System.Drawing.Size(707, 323);
-            this.dataGridViewX1.TabIndex = 3;
-            this.dataGridViewX1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellClick);
+            this.dataGridEmployee.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridEmployee.Location = new System.Drawing.Point(0, 235);
+            this.dataGridEmployee.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.dataGridEmployee.Name = "dataGridEmployee";
+            this.dataGridEmployee.ReadOnly = true;
+            this.dataGridEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridEmployee.RowHeadersWidth = 51;
+            this.dataGridEmployee.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridEmployee.Size = new System.Drawing.Size(707, 323);
+            this.dataGridEmployee.TabIndex = 3;
+            this.dataGridEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellClick);
             // 
             // eIDDataGridViewTextBoxColumn
             // 
@@ -693,7 +693,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(707, 558);
             this.Controls.Add(this.groupPanel2);
-            this.Controls.Add(this.dataGridViewX1);
+            this.Controls.Add(this.dataGridEmployee);
             this.Controls.Add(this.groupPanel1);
             this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -707,7 +707,7 @@
             this.Load += new System.EventHandler(this.addpersons_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridEmployee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).EndInit();
             this.groupPanel2.ResumeLayout(false);
@@ -739,7 +739,6 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtMobile;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTel;
         private DevComponents.DotNetBar.ButtonX cleaner;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.Controls.TextBoxX nameSearch;
         private DevComponents.DotNetBar.Controls.TextBoxX codeSearch;
@@ -756,5 +755,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ephoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eaddressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridEmployee;
     }
 }

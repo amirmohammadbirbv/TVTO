@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.reset = new DevComponents.DotNetBar.ButtonX();
             this.lblChangeFont = new System.Windows.Forms.Label();
             this.lblBackImage = new System.Windows.Forms.Label();
             this.lblBackColor = new System.Windows.Forms.Label();
             this.lblFontColor = new System.Windows.Forms.Label();
+            this.changeFont = new DevComponents.DotNetBar.ButtonX();
+            this.changeBackImage = new DevComponents.DotNetBar.ButtonX();
+            this.changBackColor = new DevComponents.DotNetBar.ButtonX();
+            this.changeFontColor = new DevComponents.DotNetBar.ButtonX();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.colorDialogFont = new System.Windows.Forms.ColorDialog();
             this.colorDialogBackground = new System.Windows.Forms.ColorDialog();
             this.fontDialog = new System.Windows.Forms.FontDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.changeFontColor = new DevComponents.DotNetBar.ButtonX();
-            this.changBackColor = new DevComponents.DotNetBar.ButtonX();
-            this.changeBackImage = new DevComponents.DotNetBar.ButtonX();
-            this.changeFont = new DevComponents.DotNetBar.ButtonX();
-            this.reset = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +99,20 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "تنظیمات";
+            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
+            // 
+            // reset
+            // 
+            this.reset.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.reset.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.reset.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.reset.Location = new System.Drawing.Point(248, 228);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(114, 39);
+            this.reset.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.reset.TabIndex = 2;
+            this.reset.Text = "ریست سفارشی سازی";
+            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // lblChangeFont
             // 
@@ -132,57 +146,17 @@
             this.lblFontColor.Size = new System.Drawing.Size(0, 22);
             this.lblFontColor.TabIndex = 0;
             // 
-            // buttonX2
+            // changeFont
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(50, 288);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(114, 42);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX2.TabIndex = 0;
-            this.buttonX2.Text = "لغو";
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialogBackImage";
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(248, 288);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(114, 42);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 0;
-            this.buttonX1.Text = "ذخیره";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
-            // 
-            // changeFontColor
-            // 
-            this.changeFontColor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.changeFontColor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.changeFontColor.Location = new System.Drawing.Point(248, 29);
-            this.changeFontColor.Name = "changeFontColor";
-            this.changeFontColor.Size = new System.Drawing.Size(114, 39);
-            this.changeFontColor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.changeFontColor.TabIndex = 1;
-            this.changeFontColor.Text = "تغییر رنگ متن";
-            this.changeFontColor.Click += new System.EventHandler(this.changeFontColor_Click);
-            // 
-            // changBackColor
-            // 
-            this.changBackColor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.changBackColor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.changBackColor.Location = new System.Drawing.Point(248, 79);
-            this.changBackColor.Name = "changBackColor";
-            this.changBackColor.Size = new System.Drawing.Size(114, 39);
-            this.changBackColor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.changBackColor.TabIndex = 1;
-            this.changBackColor.Text = "تغییر رنگ پس زمینه";
-            this.changBackColor.Click += new System.EventHandler(this.changBackColor_Click);
+            this.changeFont.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.changeFont.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.changeFont.Location = new System.Drawing.Point(248, 179);
+            this.changeFont.Name = "changeFont";
+            this.changeFont.Size = new System.Drawing.Size(114, 39);
+            this.changeFont.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.changeFont.TabIndex = 1;
+            this.changeFont.Text = "تغییر فونت";
+            this.changeFont.Click += new System.EventHandler(this.changeFont_Click);
             // 
             // changeBackImage
             // 
@@ -196,30 +170,57 @@
             this.changeBackImage.Text = "تغییر عکس پس زمینه";
             this.changeBackImage.Click += new System.EventHandler(this.changeBackImage_Click);
             // 
-            // changeFont
+            // changBackColor
             // 
-            this.changeFont.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.changeFont.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.changeFont.Location = new System.Drawing.Point(248, 179);
-            this.changeFont.Name = "changeFont";
-            this.changeFont.Size = new System.Drawing.Size(114, 39);
-            this.changeFont.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.changeFont.TabIndex = 1;
-            this.changeFont.Text = "تغییر فونت";
-            this.changeFont.Click += new System.EventHandler(this.changeFont_Click);
+            this.changBackColor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.changBackColor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.changBackColor.Location = new System.Drawing.Point(248, 79);
+            this.changBackColor.Name = "changBackColor";
+            this.changBackColor.Size = new System.Drawing.Size(114, 39);
+            this.changBackColor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.changBackColor.TabIndex = 1;
+            this.changBackColor.Text = "تغییر رنگ پس زمینه";
+            this.changBackColor.Click += new System.EventHandler(this.changBackColor_Click);
             // 
-            // reset
+            // changeFontColor
             // 
-            this.reset.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.reset.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.reset.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.reset.Location = new System.Drawing.Point(248, 228);
-            this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(114, 39);
-            this.reset.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.reset.TabIndex = 2;
-            this.reset.Text = "ریست سفارشی سازی";
-            this.reset.Click += new System.EventHandler(this.reset_Click);
+            this.changeFontColor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.changeFontColor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.changeFontColor.Location = new System.Drawing.Point(248, 29);
+            this.changeFontColor.Name = "changeFontColor";
+            this.changeFontColor.Size = new System.Drawing.Size(114, 39);
+            this.changeFontColor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.changeFontColor.TabIndex = 1;
+            this.changeFontColor.Text = "تغییر رنگ متن";
+            this.changeFontColor.Click += new System.EventHandler(this.changeFontColor_Click);
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Location = new System.Drawing.Point(50, 288);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(114, 42);
+            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX2.TabIndex = 0;
+            this.buttonX2.Text = "لغو";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(248, 288);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(114, 42);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 0;
+            this.buttonX1.Text = "ذخیره";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialogBackImage";
             // 
             // setting
             // 

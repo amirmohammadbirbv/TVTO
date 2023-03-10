@@ -37,3 +37,5 @@ C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.e
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.pdb
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.setting.resources
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.addPerson.resources
+C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\bin\Debug\DevComponents.DotNetBar.Keyboard.xml

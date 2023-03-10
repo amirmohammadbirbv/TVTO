@@ -44,7 +44,11 @@
             this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem4 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem3 = new DevComponents.DotNetBar.RibbonTabItem();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.ribbonControl1.SuspendLayout();
+            this.ribbonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonTabItem2
@@ -133,6 +137,9 @@
             // ribbonPanel1
             // 
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonPanel1.Controls.Add(this.panelEx2);
+            this.ribbonPanel1.Controls.Add(this.panelEx1);
+            this.ribbonPanel1.Controls.Add(this.splitter1);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonPanel1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonPanel1.Location = new System.Drawing.Point(0, 62);
@@ -201,6 +208,52 @@
             this.ribbonTabItem3.Panel = this.ribbonPanel1;
             this.ribbonTabItem3.Text = "تنظیمات و سفارشی سازی";
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(3, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 402);
+            this.splitter1.TabIndex = 4;
+            this.splitter1.TabStop = false;
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelEx1.Location = new System.Drawing.Point(6, 0);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(185, 402);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 2;
+            this.panelEx1.Text = "panelEx1";
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelEx2.Location = new System.Drawing.Point(191, 0);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(573, 132);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 6;
+            this.panelEx2.Text = "panelEx2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
@@ -219,6 +272,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
+            this.ribbonPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -239,6 +293,9 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem4;
         private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem3;
         internal DevComponents.DotNetBar.StyleManager styleManager1;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
+        private DevComponents.DotNetBar.PanelEx panelEx1;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }
 

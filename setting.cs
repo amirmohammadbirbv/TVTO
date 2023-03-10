@@ -92,5 +92,10 @@ namespace tvto
             MessageBox.Show("آیا واقعا میخواهید برگردید به تنظیمات اول ؟","",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             
         }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
