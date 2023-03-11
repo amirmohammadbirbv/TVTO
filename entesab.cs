@@ -73,7 +73,6 @@ namespace tvto
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            comboBoxCar.Text = dataGridViewCar.Rows[comboBoxCar.SelectedIndex].Cells[0].Value.ToString();
             if (comboBoxCar.Text != "" && txtDID.Text != "" && txtEID.Text != "" && comboBoxGiven.Text != "" && comboBoxTaken.Text != "" && comboBoxUser.Text != "")
             {
                 try
@@ -110,6 +109,5 @@ namespace tvto
             comboBoxTaken.Text = dataGridViewrCar.Rows[index].Cells[5].Value.ToString();
             comboBoxUser.Text = dataGridViewrCar.Rows[index].Cells[3].Value.ToString();
         }
-
     }
 }
