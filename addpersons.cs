@@ -292,10 +292,5 @@ namespace tvto
         {
 
         }
-
-        private void groupPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -138,7 +138,6 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "مشخصات پرسنل";
-            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
             // cleaner
             // 
@@ -479,14 +478,14 @@
             this.dataGridEmployee.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dataGridEmployee.Location = new System.Drawing.Point(0, 235);
+            this.dataGridEmployee.Location = new System.Drawing.Point(0, 240);
             this.dataGridEmployee.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.dataGridEmployee.Name = "dataGridEmployee";
             this.dataGridEmployee.ReadOnly = true;
             this.dataGridEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridEmployee.RowHeadersWidth = 51;
             this.dataGridEmployee.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridEmployee.Size = new System.Drawing.Size(707, 323);
+            this.dataGridEmployee.Size = new System.Drawing.Size(707, 318);
             this.dataGridEmployee.TabIndex = 3;
             this.dataGridEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellClick);
             // 
@@ -586,7 +585,7 @@
             this.groupPanel2.Location = new System.Drawing.Point(0, 180);
             this.groupPanel2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(707, 55);
+            this.groupPanel2.Size = new System.Drawing.Size(707, 60);
             // 
             // 
             // 

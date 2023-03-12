@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(entesab));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.nameSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.codeSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -52,6 +52,23 @@
             this.rcarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tvto2DataSet = new tvto.tvto2DataSet();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtDID = new DevComponents.DotNetBar.Controls.MaskedTextBoxAdv();
+            this.dataGridViewU = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.realNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewE = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.efamilyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ecodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emobileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eaddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxCar = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.dataGridViewCar = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.cIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +83,6 @@
             this.comboBoxUser = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxGiven = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxTaken = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.txtDID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtEID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.cleaner = new DevComponents.DotNetBar.ButtonX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
@@ -80,35 +96,19 @@
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.r_carTableAdapter = new tvto.tvto2DataSetTableAdapters.R_carTableAdapter();
             this.carTableAdapter = new tvto.tvto2DataSetTableAdapters.CarTableAdapter();
-            this.dataGridViewE = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTableAdapter = new tvto.tvto2DataSetTableAdapters.EmployeeTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.efamilyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ecodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emobileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eaddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userTableAdapter = new tvto.tvto2DataSetTableAdapters.UserTableAdapter();
-            this.dataGridViewU = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.realNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewrCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rcarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).BeginInit();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel2
@@ -169,6 +169,7 @@
             this.nameSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.nameSearch.Size = new System.Drawing.Size(203, 26);
             this.nameSearch.TabIndex = 15;
+            this.nameSearch.TextChanged += new System.EventHandler(this.nameSearch_TextChanged);
             // 
             // codeSearch
             // 
@@ -184,6 +185,7 @@
             this.codeSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.codeSearch.Size = new System.Drawing.Size(203, 26);
             this.codeSearch.TabIndex = 14;
+            this.codeSearch.TextChanged += new System.EventHandler(this.codeSearch_TextChanged);
             // 
             // labelX10
             // 
@@ -197,9 +199,9 @@
             this.labelX10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX10.Name = "labelX10";
             this.labelX10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX10.Size = new System.Drawing.Size(50, 17);
+            this.labelX10.Size = new System.Drawing.Size(62, 17);
             this.labelX10.TabIndex = 5;
-            this.labelX10.Text = "براساس نام";
+            this.labelX10.Text = "براساس تاریخ";
             // 
             // labelX9
             // 
@@ -213,9 +215,9 @@
             this.labelX9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX9.Name = "labelX9";
             this.labelX9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX9.Size = new System.Drawing.Size(71, 17);
+            this.labelX9.Size = new System.Drawing.Size(62, 17);
             this.labelX9.TabIndex = 5;
-            this.labelX9.Text = "بر اساس کد ملی";
+            this.labelX9.Text = "بر اساس آیدی";
             // 
             // dataGridViewrCar
             // 
@@ -223,19 +225,19 @@
             this.dataGridViewrCar.AllowUserToDeleteRows = false;
             this.dataGridViewrCar.AllowUserToResizeColumns = false;
             this.dataGridViewrCar.AllowUserToResizeRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dataGridViewrCar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dataGridViewrCar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewrCar.AutoGenerateColumns = false;
             this.dataGridViewrCar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewrCar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewrCar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewrCar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewrCar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewrCar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ridDataGridViewTextBoxColumn,
@@ -245,14 +247,14 @@
             this.egidDataGridViewTextBoxColumn,
             this.etidDataGridViewTextBoxColumn});
             this.dataGridViewrCar.DataSource = this.rcarBindingSource;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewrCar.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewrCar.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewrCar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridViewrCar.EnableHeadersVisualStyles = false;
             this.dataGridViewrCar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
@@ -261,14 +263,14 @@
             this.dataGridViewrCar.Name = "dataGridViewrCar";
             this.dataGridViewrCar.ReadOnly = true;
             this.dataGridViewrCar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewrCar.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewrCar.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewrCar.RowHeadersWidth = 51;
             this.dataGridViewrCar.Size = new System.Drawing.Size(711, 312);
             this.dataGridViewrCar.TabIndex = 15;
@@ -277,50 +279,56 @@
             // ridDataGridViewTextBoxColumn
             // 
             this.ridDataGridViewTextBoxColumn.DataPropertyName = "r_id";
-            this.ridDataGridViewTextBoxColumn.HeaderText = "r_id";
+            this.ridDataGridViewTextBoxColumn.HeaderText = "آیدی عملیات";
             this.ridDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ridDataGridViewTextBoxColumn.Name = "ridDataGridViewTextBoxColumn";
             this.ridDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ridDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // cidDataGridViewTextBoxColumn
             // 
             this.cidDataGridViewTextBoxColumn.DataPropertyName = "c_id";
-            this.cidDataGridViewTextBoxColumn.HeaderText = "c_id";
+            this.cidDataGridViewTextBoxColumn.HeaderText = "آیدی ماشین";
             this.cidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.cidDataGridViewTextBoxColumn.Name = "cidDataGridViewTextBoxColumn";
             this.cidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // rdateDataGridViewTextBoxColumn
             // 
             this.rdateDataGridViewTextBoxColumn.DataPropertyName = "r_date";
-            this.rdateDataGridViewTextBoxColumn.HeaderText = "r_date";
+            this.rdateDataGridViewTextBoxColumn.HeaderText = "تاریخ";
             this.rdateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.rdateDataGridViewTextBoxColumn.Name = "rdateDataGridViewTextBoxColumn";
             this.rdateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rdateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // useridDataGridViewTextBoxColumn
             // 
             this.useridDataGridViewTextBoxColumn.DataPropertyName = "user_id";
-            this.useridDataGridViewTextBoxColumn.HeaderText = "user_id";
+            this.useridDataGridViewTextBoxColumn.HeaderText = "آیدی کاربر";
             this.useridDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.useridDataGridViewTextBoxColumn.Name = "useridDataGridViewTextBoxColumn";
             this.useridDataGridViewTextBoxColumn.ReadOnly = true;
+            this.useridDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // egidDataGridViewTextBoxColumn
             // 
             this.egidDataGridViewTextBoxColumn.DataPropertyName = "e_gid";
-            this.egidDataGridViewTextBoxColumn.HeaderText = "e_gid";
+            this.egidDataGridViewTextBoxColumn.HeaderText = "آیدی شخص تحویل دهنده";
             this.egidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.egidDataGridViewTextBoxColumn.Name = "egidDataGridViewTextBoxColumn";
             this.egidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.egidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // etidDataGridViewTextBoxColumn
             // 
             this.etidDataGridViewTextBoxColumn.DataPropertyName = "e_tid";
-            this.etidDataGridViewTextBoxColumn.HeaderText = "e_tid";
+            this.etidDataGridViewTextBoxColumn.HeaderText = "آیدی شخص تحویل گیرنده";
             this.etidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.etidDataGridViewTextBoxColumn.Name = "etidDataGridViewTextBoxColumn";
             this.etidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.etidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // rcarBindingSource
             // 
@@ -336,6 +344,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.txtDID);
             this.groupPanel1.Controls.Add(this.dataGridViewU);
             this.groupPanel1.Controls.Add(this.dataGridViewE);
             this.groupPanel1.Controls.Add(this.comboBoxCar);
@@ -343,7 +352,6 @@
             this.groupPanel1.Controls.Add(this.comboBoxUser);
             this.groupPanel1.Controls.Add(this.comboBoxGiven);
             this.groupPanel1.Controls.Add(this.comboBoxTaken);
-            this.groupPanel1.Controls.Add(this.txtDID);
             this.groupPanel1.Controls.Add(this.txtEID);
             this.groupPanel1.Controls.Add(this.cleaner);
             this.groupPanel1.Controls.Add(this.labelX8);
@@ -393,6 +401,186 @@
             this.groupPanel1.TabIndex = 14;
             this.groupPanel1.Text = "مشخصات پرسنل";
             // 
+            // txtDID
+            // 
+            // 
+            // 
+            // 
+            this.txtDID.BackgroundStyle.Class = "TextBoxBorder";
+            this.txtDID.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDID.ButtonClear.Visible = true;
+            this.txtDID.Location = new System.Drawing.Point(486, 88);
+            this.txtDID.Mask = "##/##/####";
+            this.txtDID.Name = "txtDID";
+            this.txtDID.Size = new System.Drawing.Size(129, 23);
+            this.txtDID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.txtDID.TabIndex = 30;
+            this.txtDID.Text = "";
+            // 
+            // dataGridViewU
+            // 
+            this.dataGridViewU.AutoGenerateColumns = false;
+            this.dataGridViewU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewU.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.userNameDataGridViewTextBoxColumn,
+            this.passwordDataGridViewTextBoxColumn,
+            this.realNameDataGridViewTextBoxColumn});
+            this.dataGridViewU.DataSource = this.userBindingSource;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewU.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewU.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewU.Location = new System.Drawing.Point(0, 112);
+            this.dataGridViewU.Name = "dataGridViewU";
+            this.dataGridViewU.RowHeadersWidth = 51;
+            this.dataGridViewU.RowTemplate.Height = 24;
+            this.dataGridViewU.Size = new System.Drawing.Size(28, 28);
+            this.dataGridViewU.TabIndex = 29;
+            this.dataGridViewU.Visible = false;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "userName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "userName";
+            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            this.userNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
+            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            this.passwordDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // realNameDataGridViewTextBoxColumn
+            // 
+            this.realNameDataGridViewTextBoxColumn.DataPropertyName = "realName";
+            this.realNameDataGridViewTextBoxColumn.HeaderText = "realName";
+            this.realNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.realNameDataGridViewTextBoxColumn.Name = "realNameDataGridViewTextBoxColumn";
+            this.realNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataMember = "User";
+            this.userBindingSource.DataSource = this.tvto2DataSet;
+            // 
+            // dataGridViewE
+            // 
+            this.dataGridViewE.AutoGenerateColumns = false;
+            this.dataGridViewE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewE.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.enameDataGridViewTextBoxColumn,
+            this.efamilyDataGridViewTextBoxColumn,
+            this.ecodeDataGridViewTextBoxColumn,
+            this.emobileDataGridViewTextBoxColumn,
+            this.ephoneDataGridViewTextBoxColumn,
+            this.eaddressDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dataGridViewE.DataSource = this.employeeBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewE.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewE.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewE.Location = new System.Drawing.Point(3, 50);
+            this.dataGridViewE.Name = "dataGridViewE";
+            this.dataGridViewE.RowHeadersWidth = 51;
+            this.dataGridViewE.RowTemplate.Height = 24;
+            this.dataGridViewE.Size = new System.Drawing.Size(25, 44);
+            this.dataGridViewE.TabIndex = 17;
+            this.dataGridViewE.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "e_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "e_ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // enameDataGridViewTextBoxColumn
+            // 
+            this.enameDataGridViewTextBoxColumn.DataPropertyName = "e_name";
+            this.enameDataGridViewTextBoxColumn.HeaderText = "e_name";
+            this.enameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.enameDataGridViewTextBoxColumn.Name = "enameDataGridViewTextBoxColumn";
+            this.enameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // efamilyDataGridViewTextBoxColumn
+            // 
+            this.efamilyDataGridViewTextBoxColumn.DataPropertyName = "e_family";
+            this.efamilyDataGridViewTextBoxColumn.HeaderText = "e_family";
+            this.efamilyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.efamilyDataGridViewTextBoxColumn.Name = "efamilyDataGridViewTextBoxColumn";
+            this.efamilyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ecodeDataGridViewTextBoxColumn
+            // 
+            this.ecodeDataGridViewTextBoxColumn.DataPropertyName = "e_code";
+            this.ecodeDataGridViewTextBoxColumn.HeaderText = "e_code";
+            this.ecodeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ecodeDataGridViewTextBoxColumn.Name = "ecodeDataGridViewTextBoxColumn";
+            this.ecodeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // emobileDataGridViewTextBoxColumn
+            // 
+            this.emobileDataGridViewTextBoxColumn.DataPropertyName = "e_mobile";
+            this.emobileDataGridViewTextBoxColumn.HeaderText = "e_mobile";
+            this.emobileDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emobileDataGridViewTextBoxColumn.Name = "emobileDataGridViewTextBoxColumn";
+            this.emobileDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ephoneDataGridViewTextBoxColumn
+            // 
+            this.ephoneDataGridViewTextBoxColumn.DataPropertyName = "e_phone";
+            this.ephoneDataGridViewTextBoxColumn.HeaderText = "e_phone";
+            this.ephoneDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ephoneDataGridViewTextBoxColumn.Name = "ephoneDataGridViewTextBoxColumn";
+            this.ephoneDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // eaddressDataGridViewTextBoxColumn
+            // 
+            this.eaddressDataGridViewTextBoxColumn.DataPropertyName = "e_address";
+            this.eaddressDataGridViewTextBoxColumn.HeaderText = "e_address";
+            this.eaddressDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.eaddressDataGridViewTextBoxColumn.Name = "eaddressDataGridViewTextBoxColumn";
+            this.eaddressDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "e_mail";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "e_mail";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "Employee";
+            this.employeeBindingSource.DataSource = this.tvto2DataSet;
+            // 
             // comboBoxCar
             // 
             this.comboBoxCar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -421,14 +609,14 @@
             this.cshasiDataGridViewTextBoxColumn,
             this.cbateDataGridViewTextBoxColumn});
             this.dataGridViewCar.DataSource = this.carBindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCar.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCar.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewCar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewCar.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewCar.Name = "dataGridViewCar";
@@ -549,19 +737,6 @@
             this.comboBoxTaken.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxTaken.TabIndex = 24;
             // 
-            // txtDID
-            // 
-            // 
-            // 
-            // 
-            this.txtDID.Border.Class = "TextBoxBorder";
-            this.txtDID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtDID.Location = new System.Drawing.Point(486, 87);
-            this.txtDID.Name = "txtDID";
-            this.txtDID.PreventEnterBeep = true;
-            this.txtDID.Size = new System.Drawing.Size(129, 24);
-            this.txtDID.TabIndex = 22;
-            // 
             // txtEID
             // 
             // 
@@ -616,6 +791,7 @@
             this.btnRemove.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnRemove.TabIndex = 11;
             this.btnRemove.Text = "حذف";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
             // 
@@ -645,6 +821,7 @@
             this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "ویرایش";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // labelX5
             // 
@@ -734,177 +911,13 @@
             // 
             this.carTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewE
-            // 
-            this.dataGridViewE.AutoGenerateColumns = false;
-            this.dataGridViewE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewE.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.enameDataGridViewTextBoxColumn,
-            this.efamilyDataGridViewTextBoxColumn,
-            this.ecodeDataGridViewTextBoxColumn,
-            this.emobileDataGridViewTextBoxColumn,
-            this.ephoneDataGridViewTextBoxColumn,
-            this.eaddressDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.dataGridViewE.DataSource = this.employeeBindingSource;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewE.DefaultCellStyle = dataGridViewCellStyle13;
-            this.dataGridViewE.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dataGridViewE.Location = new System.Drawing.Point(3, 50);
-            this.dataGridViewE.Name = "dataGridViewE";
-            this.dataGridViewE.RowHeadersWidth = 51;
-            this.dataGridViewE.RowTemplate.Height = 24;
-            this.dataGridViewE.Size = new System.Drawing.Size(25, 44);
-            this.dataGridViewE.TabIndex = 17;
-            this.dataGridViewE.Visible = false;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.tvto2DataSet;
-            // 
             // employeeTableAdapter
             // 
             this.employeeTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "e_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "e_ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // enameDataGridViewTextBoxColumn
-            // 
-            this.enameDataGridViewTextBoxColumn.DataPropertyName = "e_name";
-            this.enameDataGridViewTextBoxColumn.HeaderText = "e_name";
-            this.enameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.enameDataGridViewTextBoxColumn.Name = "enameDataGridViewTextBoxColumn";
-            this.enameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // efamilyDataGridViewTextBoxColumn
-            // 
-            this.efamilyDataGridViewTextBoxColumn.DataPropertyName = "e_family";
-            this.efamilyDataGridViewTextBoxColumn.HeaderText = "e_family";
-            this.efamilyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.efamilyDataGridViewTextBoxColumn.Name = "efamilyDataGridViewTextBoxColumn";
-            this.efamilyDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ecodeDataGridViewTextBoxColumn
-            // 
-            this.ecodeDataGridViewTextBoxColumn.DataPropertyName = "e_code";
-            this.ecodeDataGridViewTextBoxColumn.HeaderText = "e_code";
-            this.ecodeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ecodeDataGridViewTextBoxColumn.Name = "ecodeDataGridViewTextBoxColumn";
-            this.ecodeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // emobileDataGridViewTextBoxColumn
-            // 
-            this.emobileDataGridViewTextBoxColumn.DataPropertyName = "e_mobile";
-            this.emobileDataGridViewTextBoxColumn.HeaderText = "e_mobile";
-            this.emobileDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emobileDataGridViewTextBoxColumn.Name = "emobileDataGridViewTextBoxColumn";
-            this.emobileDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ephoneDataGridViewTextBoxColumn
-            // 
-            this.ephoneDataGridViewTextBoxColumn.DataPropertyName = "e_phone";
-            this.ephoneDataGridViewTextBoxColumn.HeaderText = "e_phone";
-            this.ephoneDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ephoneDataGridViewTextBoxColumn.Name = "ephoneDataGridViewTextBoxColumn";
-            this.ephoneDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // eaddressDataGridViewTextBoxColumn
-            // 
-            this.eaddressDataGridViewTextBoxColumn.DataPropertyName = "e_address";
-            this.eaddressDataGridViewTextBoxColumn.HeaderText = "e_address";
-            this.eaddressDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.eaddressDataGridViewTextBoxColumn.Name = "eaddressDataGridViewTextBoxColumn";
-            this.eaddressDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "e_mail";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "e_mail";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataMember = "User";
-            this.userBindingSource.DataSource = this.tvto2DataSet;
-            // 
             // userTableAdapter
             // 
             this.userTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridViewU
-            // 
-            this.dataGridViewU.AutoGenerateColumns = false;
-            this.dataGridViewU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewU.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.realNameDataGridViewTextBoxColumn});
-            this.dataGridViewU.DataSource = this.userBindingSource;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewU.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewU.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dataGridViewU.Location = new System.Drawing.Point(0, 112);
-            this.dataGridViewU.Name = "dataGridViewU";
-            this.dataGridViewU.RowHeadersWidth = 51;
-            this.dataGridViewU.RowTemplate.Height = 24;
-            this.dataGridViewU.Size = new System.Drawing.Size(28, 28);
-            this.dataGridViewU.TabIndex = 29;
-            this.dataGridViewU.Visible = false;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "userName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "userName";
-            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            this.userNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // realNameDataGridViewTextBoxColumn
-            // 
-            this.realNameDataGridViewTextBoxColumn.DataPropertyName = "realName";
-            this.realNameDataGridViewTextBoxColumn.HeaderText = "realName";
-            this.realNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.realNameDataGridViewTextBoxColumn.Name = "realNameDataGridViewTextBoxColumn";
-            this.realNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // entesab
             // 
@@ -929,12 +942,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).EndInit();
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -952,7 +965,6 @@
         private DevComponents.DotNetBar.ButtonX btnRemove;
         private DevComponents.DotNetBar.ButtonX btnAdd;
         private DevComponents.DotNetBar.ButtonX btnUpdate;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtDID;
         private DevComponents.DotNetBar.Controls.TextBoxX txtEID;
         private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.DotNetBar.LabelX labelX5;
@@ -964,12 +976,6 @@
         private System.Windows.Forms.BindingSource rcarBindingSource;
         private tvto2DataSetTableAdapters.R_carTableAdapter r_carTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn eidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ridDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rdateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn useridDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn egidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn etidDataGridViewTextBoxColumn;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxUser;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxGiven;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxTaken;
@@ -1003,5 +1009,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn realNameDataGridViewTextBoxColumn;
+        private DevComponents.DotNetBar.Controls.MaskedTextBoxAdv txtDID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ridDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rdateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn useridDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn egidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn etidDataGridViewTextBoxColumn;
     }
 }

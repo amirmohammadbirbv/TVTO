@@ -54,5 +54,10 @@ namespace tvto
         {
             new addPerson().ShowDialog();
         }
+
+        private void buttonItem4_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
