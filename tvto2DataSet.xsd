@@ -432,7 +432,7 @@ WHERE  (e_ID = ?)</CommandText>
               <Mapping SourceColumn="e_tid" DataSetColumn="e_tid" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteQuery">
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM `R_car` WHERE (`r_id` = ?)</CommandText>
@@ -466,7 +466,7 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertQuery">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `R_car` (`r_id`, `e_gid`, `c_id`, `r_date`, `user_id`, `e_tid`) VALUES (?, ?, ?, ?, ?, ?)</CommandText>
@@ -481,7 +481,7 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQuery" Modifier="Public" Name="ScalarQuery" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ScalarQuery">
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQuery" Modifier="Public" Name="ScalarQuery" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQuery">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) FROM R_car WHERE(r_id=?)</CommandText>
@@ -513,50 +513,50 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
               <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="[User]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM `User` WHERE ((`ID` = ?) AND ((? = 1 AND `userName` IS NULL) OR (`userName` = ?)) AND ((? = 1 AND `password` IS NULL) OR (`password` = ?)) AND ((? = 1 AND `realName` IS NULL) OR (`realName` = ?)))</CommandText>
+                    <CommandText>DELETE FROM `User` WHERE ((`ID` = ?) AND ((? = 1 AND `password` IS NULL) OR (`password` = ?)) AND ((? = 1 AND `realName` IS NULL) OR (`realName` = ?)) AND ((? = 1 AND `img` IS NULL) OR (`img` = ?)))</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_userName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="userName" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_userName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="userName" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_password" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_password" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_realName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="realName" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_realName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="realName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_img" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="img" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_img" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="img" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </DeleteCommand>
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO `User` (`ID`, `userName`, `password`, `realName`) VALUES (?, ?, ?, ?)</CommandText>
+                    <CommandText>INSERT INTO `User` (`ID`, `password`, `realName`, `img`) VALUES (?, ?, ?, ?)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="userName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="userName" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="password" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="realName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="realName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="img" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="img" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT ID, userName, [password], realName FROM `User`</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, [password], realName, img FROM [User]</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE `User` SET `ID` = ?, `userName` = ?, `password` = ?, `realName` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `userName` IS NULL) OR (`userName` = ?)) AND ((? = 1 AND `password` IS NULL) OR (`password` = ?)) AND ((? = 1 AND `realName` IS NULL) OR (`realName` = ?)))</CommandText>
+                    <CommandText>UPDATE `User` SET `ID` = ?, `password` = ?, `realName` = ?, `img` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `password` IS NULL) OR (`password` = ?)) AND ((? = 1 AND `realName` IS NULL) OR (`realName` = ?)) AND ((? = 1 AND `img` IS NULL) OR (`img` = ?)))</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="userName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="userName" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="password" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="realName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="realName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="img" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="img" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_userName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="userName" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_userName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="userName" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_password" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_password" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_realName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="realName" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_realName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="realName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_img" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="img" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_img" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="img" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </UpdateCommand>
@@ -564,26 +564,64 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="ID" DataSetColumn="ID" />
-              <Mapping SourceColumn="userName" DataSetColumn="userName" />
               <Mapping SourceColumn="password" DataSetColumn="password" />
               <Mapping SourceColumn="realName" DataSetColumn="realName" />
+              <Mapping SourceColumn="img" DataSetColumn="img" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CanLogin" Modifier="Public" Name="CanLogin" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="CanLogin">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM [User] WHERE ((ID = ?) AND (password = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="password" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="password" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteQuery">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+DELETE FROM `User` WHERE ((`ID` = ?) AND (`password` = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="password" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="password" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
               <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="[User]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByID" GeneratorSourceName="FillByID" GetMethodModifier="Public" GetMethodName="GetDataByID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByID" UserSourceName="FillByID">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT ID, [password], realName, userName FROM `User` WHERE (ID LIKE ? + '%')</CommandText>
+                    <CommandText>SELECT ID, [password], realName, img FROM [User] WHERE(ID = ?)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="[User]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="selectID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetIds" GeneratorSourceName="selectID" GetMethodModifier="Public" GetMethodName="GetIds" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetIds" UserSourceName="selectID">
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsertQuery">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO `User` (`ID`, `password`, `realName`, `img`) VALUES (?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="password" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="password" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="realName" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="realName" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="realName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param4" ColumnName="img" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="img" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="img" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="tvto2ConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQuery" Modifier="Public" Name="ScalarQuery" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ScalarQuery">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT ID, [password], realName, userName FROM [User]</CommandText>
-                    <Parameters />
+                    <CommandText>SELECT COUNT(*) FROM [User] WHERE (ID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="[User]" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="ID" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
@@ -597,59 +635,45 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
   <xs:element name="tvto2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="tvto2DataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="tvto2DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Car" msprop:Generator_RowEvHandlerName="CarRowChangeEventHandler" msprop:Generator_RowDeletedName="CarRowDeleted" msprop:Generator_RowDeletingName="CarRowDeleting" msprop:Generator_RowEvArgName="CarRowChangeEvent" msprop:Generator_TablePropName="Car" msprop:Generator_RowChangedName="CarRowChanged" msprop:Generator_UserTableName="Car" msprop:Generator_RowChangingName="CarRowChanging" msprop:Generator_RowClassName="CarRow" msprop:Generator_TableClassName="CarDataTable" msprop:Generator_TableVarName="tableCar">
+        <xs:element name="R_car" msprop:Generator_RowEvHandlerName="R_carRowChangeEventHandler" msprop:Generator_RowDeletedName="R_carRowDeleted" msprop:Generator_RowDeletingName="R_carRowDeleting" msprop:Generator_RowEvArgName="R_carRowChangeEvent" msprop:Generator_TablePropName="R_car" msprop:Generator_RowChangedName="R_carRowChanged" msprop:Generator_UserTableName="R_car" msprop:Generator_RowChangingName="R_carRowChanging" msprop:Generator_RowClassName="R_carRow" msprop:Generator_TableClassName="R_carDataTable" msprop:Generator_TableVarName="tableR_car">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="c_ID" msprop:Generator_ColumnPropNameInTable="c_IDColumn" msprop:Generator_ColumnPropNameInRow="c_ID" msprop:Generator_UserColumnName="c_ID" msprop:Generator_ColumnVarNameInTable="columnc_ID">
+              <xs:element name="r_id" msprop:Generator_ColumnPropNameInTable="r_idColumn" msprop:Generator_ColumnPropNameInRow="r_id" msprop:Generator_UserColumnName="r_id" msprop:Generator_ColumnVarNameInTable="columnr_id">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="c_system" msprop:Generator_ColumnPropNameInTable="c_systemColumn" msprop:Generator_ColumnPropNameInRow="c_system" msprop:Generator_UserColumnName="c_system" msprop:Generator_ColumnVarNameInTable="columnc_system" minOccurs="0">
+              <xs:element name="c_id" msprop:Generator_ColumnPropNameInTable="c_idColumn" msprop:Generator_ColumnPropNameInRow="c_id" msprop:Generator_UserColumnName="c_id" msprop:Generator_ColumnVarNameInTable="columnc_id" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="c_model" msprop:Generator_ColumnPropNameInTable="c_modelColumn" msprop:Generator_ColumnPropNameInRow="c_model" msprop:Generator_UserColumnName="c_model" msprop:Generator_ColumnVarNameInTable="columnc_model" minOccurs="0">
+              <xs:element name="r_date" msprop:Generator_ColumnPropNameInTable="r_dateColumn" msprop:Generator_ColumnPropNameInRow="r_date" msprop:Generator_UserColumnName="r_date" msprop:Generator_ColumnVarNameInTable="columnr_date" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="c_color" msprop:Generator_ColumnPropNameInTable="c_colorColumn" msprop:Generator_ColumnPropNameInRow="c_color" msprop:Generator_UserColumnName="c_color" msprop:Generator_ColumnVarNameInTable="columnc_color" minOccurs="0">
+              <xs:element name="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_UserColumnName="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="c_number_sh" msprop:Generator_ColumnPropNameInTable="c_number_shColumn" msprop:Generator_ColumnPropNameInRow="c_number_sh" msprop:Generator_UserColumnName="c_number_sh" msprop:Generator_ColumnVarNameInTable="columnc_number_sh" minOccurs="0">
+              <xs:element name="e_gid" msprop:Generator_ColumnPropNameInTable="e_gidColumn" msprop:Generator_ColumnPropNameInRow="e_gid" msprop:Generator_UserColumnName="e_gid" msprop:Generator_ColumnVarNameInTable="columne_gid" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="c_motor" msprop:Generator_ColumnPropNameInTable="c_motorColumn" msprop:Generator_ColumnPropNameInRow="c_motor" msprop:Generator_UserColumnName="c_motor" msprop:Generator_ColumnVarNameInTable="columnc_motor" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="c_shasi" msprop:Generator_ColumnPropNameInTable="c_shasiColumn" msprop:Generator_ColumnPropNameInRow="c_shasi" msprop:Generator_UserColumnName="c_shasi" msprop:Generator_ColumnVarNameInTable="columnc_shasi" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="c_bate" msprop:Generator_ColumnPropNameInTable="c_bateColumn" msprop:Generator_ColumnPropNameInRow="c_bate" msprop:Generator_UserColumnName="c_bate" msprop:Generator_ColumnVarNameInTable="columnc_bate" minOccurs="0">
+              <xs:element name="e_tid" msprop:Generator_ColumnPropNameInTable="e_tidColumn" msprop:Generator_ColumnPropNameInRow="e_tid" msprop:Generator_UserColumnName="e_tid" msprop:Generator_ColumnVarNameInTable="columne_tid" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -721,45 +745,59 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="R_car" msprop:Generator_RowEvHandlerName="R_carRowChangeEventHandler" msprop:Generator_RowDeletedName="R_carRowDeleted" msprop:Generator_RowDeletingName="R_carRowDeleting" msprop:Generator_RowEvArgName="R_carRowChangeEvent" msprop:Generator_TablePropName="R_car" msprop:Generator_RowChangedName="R_carRowChanged" msprop:Generator_UserTableName="R_car" msprop:Generator_RowChangingName="R_carRowChanging" msprop:Generator_RowClassName="R_carRow" msprop:Generator_TableClassName="R_carDataTable" msprop:Generator_TableVarName="tableR_car">
+        <xs:element name="Car" msprop:Generator_RowEvHandlerName="CarRowChangeEventHandler" msprop:Generator_RowDeletedName="CarRowDeleted" msprop:Generator_RowDeletingName="CarRowDeleting" msprop:Generator_RowEvArgName="CarRowChangeEvent" msprop:Generator_TablePropName="Car" msprop:Generator_RowChangedName="CarRowChanged" msprop:Generator_UserTableName="Car" msprop:Generator_RowChangingName="CarRowChanging" msprop:Generator_RowClassName="CarRow" msprop:Generator_TableClassName="CarDataTable" msprop:Generator_TableVarName="tableCar">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="r_id" msprop:Generator_ColumnPropNameInTable="r_idColumn" msprop:Generator_ColumnPropNameInRow="r_id" msprop:Generator_UserColumnName="r_id" msprop:Generator_ColumnVarNameInTable="columnr_id">
+              <xs:element name="c_ID" msprop:Generator_ColumnPropNameInTable="c_IDColumn" msprop:Generator_ColumnPropNameInRow="c_ID" msprop:Generator_UserColumnName="c_ID" msprop:Generator_ColumnVarNameInTable="columnc_ID">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="c_id" msprop:Generator_ColumnPropNameInTable="c_idColumn" msprop:Generator_ColumnPropNameInRow="c_id" msprop:Generator_UserColumnName="c_id" msprop:Generator_ColumnVarNameInTable="columnc_id" minOccurs="0">
+              <xs:element name="c_system" msprop:Generator_ColumnPropNameInTable="c_systemColumn" msprop:Generator_ColumnPropNameInRow="c_system" msprop:Generator_UserColumnName="c_system" msprop:Generator_ColumnVarNameInTable="columnc_system" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="r_date" msprop:Generator_ColumnPropNameInTable="r_dateColumn" msprop:Generator_ColumnPropNameInRow="r_date" msprop:Generator_UserColumnName="r_date" msprop:Generator_ColumnVarNameInTable="columnr_date" minOccurs="0">
+              <xs:element name="c_model" msprop:Generator_ColumnPropNameInTable="c_modelColumn" msprop:Generator_ColumnPropNameInRow="c_model" msprop:Generator_UserColumnName="c_model" msprop:Generator_ColumnVarNameInTable="columnc_model" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_UserColumnName="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" minOccurs="0">
+              <xs:element name="c_color" msprop:Generator_ColumnPropNameInTable="c_colorColumn" msprop:Generator_ColumnPropNameInRow="c_color" msprop:Generator_UserColumnName="c_color" msprop:Generator_ColumnVarNameInTable="columnc_color" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="e_gid" msprop:Generator_ColumnPropNameInTable="e_gidColumn" msprop:Generator_ColumnPropNameInRow="e_gid" msprop:Generator_UserColumnName="e_gid" msprop:Generator_ColumnVarNameInTable="columne_gid" minOccurs="0">
+              <xs:element name="c_number_sh" msprop:Generator_ColumnPropNameInTable="c_number_shColumn" msprop:Generator_ColumnPropNameInRow="c_number_sh" msprop:Generator_UserColumnName="c_number_sh" msprop:Generator_ColumnVarNameInTable="columnc_number_sh" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="e_tid" msprop:Generator_ColumnPropNameInTable="e_tidColumn" msprop:Generator_ColumnPropNameInRow="e_tid" msprop:Generator_UserColumnName="e_tid" msprop:Generator_ColumnVarNameInTable="columne_tid" minOccurs="0">
+              <xs:element name="c_motor" msprop:Generator_ColumnPropNameInTable="c_motorColumn" msprop:Generator_ColumnPropNameInRow="c_motor" msprop:Generator_UserColumnName="c_motor" msprop:Generator_ColumnVarNameInTable="columnc_motor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c_shasi" msprop:Generator_ColumnPropNameInTable="c_shasiColumn" msprop:Generator_ColumnPropNameInRow="c_shasi" msprop:Generator_UserColumnName="c_shasi" msprop:Generator_ColumnVarNameInTable="columnc_shasi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c_bate" msprop:Generator_ColumnPropNameInTable="c_bateColumn" msprop:Generator_ColumnPropNameInRow="c_bate" msprop:Generator_UserColumnName="c_bate" msprop:Generator_ColumnVarNameInTable="columnc_bate" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -769,31 +807,31 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="User" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_TablePropName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_UserTableName="User" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowClassName="UserRow" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser">
+        <xs:element name="User" msprop:Generator_RowClassName="UserRow" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_TablePropName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_UserTableName="User" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID">
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="userName" msprop:Generator_ColumnPropNameInTable="userNameColumn" msprop:Generator_ColumnPropNameInRow="userName" msprop:Generator_UserColumnName="userName" msprop:Generator_ColumnVarNameInTable="columnuserName" minOccurs="0">
+              <xs:element name="password" msprop:Generator_UserColumnName="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_ColumnVarNameInTable="columnpassword" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_UserColumnName="password" msprop:Generator_ColumnVarNameInTable="columnpassword" minOccurs="0">
+              <xs:element name="realName" msprop:Generator_UserColumnName="realName" msprop:Generator_ColumnPropNameInTable="realNameColumn" msprop:Generator_ColumnPropNameInRow="realName" msprop:Generator_ColumnVarNameInTable="columnrealName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="realName" msprop:Generator_ColumnPropNameInTable="realNameColumn" msprop:Generator_ColumnPropNameInRow="realName" msprop:Generator_UserColumnName="realName" msprop:Generator_ColumnVarNameInTable="columnrealName" minOccurs="0">
+              <xs:element name="img" msprop:Generator_UserColumnName="img" msprop:Generator_ColumnPropNameInTable="imgColumn" msprop:Generator_ColumnPropNameInRow="img" msprop:Generator_ColumnVarNameInTable="columnimg" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -806,16 +844,16 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Car" />
-      <xs:field xpath="mstns:c_ID" />
+      <xs:selector xpath=".//mstns:R_car" />
+      <xs:field xpath="mstns:r_id" />
     </xs:unique>
     <xs:unique name="Employee_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Employee" />
       <xs:field xpath="mstns:e_ID" />
     </xs:unique>
-    <xs:unique name="R_car_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:R_car" />
-      <xs:field xpath="mstns:r_id" />
+    <xs:unique name="Car_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Car" />
+      <xs:field xpath="mstns:c_ID" />
     </xs:unique>
     <xs:unique name="User_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:User" />
@@ -824,9 +862,9 @@ WHERE (`r_id` LIKE ?+'%')</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="CarR_car" msdata:parent="Car" msdata:child="R_car" msdata:parentkey="c_ID" msdata:childkey="c_id" msprop:Generator_UserParentTable="Car" msprop:Generator_UserChildTable="R_car" msprop:Generator_RelationVarName="relationCarR_car" msprop:Generator_ChildPropName="GetR_carRows" msprop:Generator_UserRelationName="CarR_car" msprop:Generator_ParentPropName="CarRow" />
+      <msdata:Relationship name="EmployeeR_car" msdata:parent="Employee" msdata:child="R_car" msdata:parentkey="e_ID" msdata:childkey="e_tid" msprop:Generator_UserParentTable="Employee" msprop:Generator_UserChildTable="R_car" msprop:Generator_RelationVarName="relationEmployeeR_car" msprop:Generator_ChildPropName="GetR_carRows" msprop:Generator_UserRelationName="EmployeeR_car" msprop:Generator_ParentPropName="EmployeeRow" />
+      <msdata:Relationship name="CarR_car" msdata:parent="Car" msdata:child="R_car" msdata:parentkey="c_ID" msdata:childkey="c_id" msprop:Generator_UserParentTable="Car" msprop:Generator_UserChildTable="R_car" msprop:Generator_RelationVarName="relationCarR_car" msprop:Generator_ChildPropName="GetR_carRows" msprop:Generator_ParentPropName="CarRow" msprop:Generator_UserRelationName="CarR_car" />
       <msdata:Relationship name="UserR_car" msdata:parent="User" msdata:child="R_car" msdata:parentkey="ID" msdata:childkey="user_id" msprop:Generator_UserParentTable="User" msprop:Generator_UserChildTable="R_car" msprop:Generator_RelationVarName="relationUserR_car" msprop:Generator_ChildPropName="GetR_carRows" msprop:Generator_ParentPropName="UserRow" msprop:Generator_UserRelationName="UserR_car" />
-      <msdata:Relationship name="EmployeeR_car" msdata:parent="Employee" msdata:child="R_car" msdata:parentkey="e_ID" msdata:childkey="e_tid" msprop:Generator_UserParentTable="Employee" msprop:Generator_UserChildTable="R_car" msprop:Generator_RelationVarName="relationEmployeeR_car" msprop:Generator_ChildPropName="GetR_carRows" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_UserRelationName="EmployeeR_car" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

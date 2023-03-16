@@ -54,14 +54,6 @@
             this.txtCshahrBani = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtCID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.SystemSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.IDSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX10 = new DevComponents.DotNetBar.LabelX();
-            this.labelX9 = new DevComponents.DotNetBar.LabelX();
-            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tvto2DataSet = new tvto.tvto2DataSet();
-            this.carTableAdapter = new tvto.tvto2DataSetTableAdapters.CarTableAdapter();
             this.cIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.csystemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmodelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,17 +62,26 @@
             this.cmotorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cshasiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tvto2DataSet = new tvto.tvto2DataSet();
+            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.SystemSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.IDSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
+            this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.carTableAdapter = new tvto.tvto2DataSetTableAdapters.CarTableAdapter();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
-            this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).BeginInit();
+            this.groupPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupPanel1
             // 
-            this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.groupPanel1.CanvasColor = System.Drawing.Color.Transparent;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.groupPanel1.Controls.Add(this.cleaner);
             this.groupPanel1.Controls.Add(this.labelX8);
             this.groupPanel1.Controls.Add(this.btnRemove);
@@ -111,9 +112,7 @@
             // 
             // 
             // 
-            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel1.Style.BackColorGradientAngle = 90;
-            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderBottomWidth = 1;
             this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -149,6 +148,7 @@
             this.cleaner.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cleaner.TabIndex = 36;
             this.cleaner.Text = "پاک کردن";
+            this.cleaner.Tooltip = "برای پاک کردن همه فیلد ها";
             this.cleaner.Click += new System.EventHandler(this.cleaner_Click);
             // 
             // labelX8
@@ -180,6 +180,7 @@
             this.btnRemove.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnRemove.TabIndex = 38;
             this.btnRemove.Text = "حذف";
+            this.btnRemove.Tooltip = "حذف یک خودرو از سیستم با توجه به آیدی";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
@@ -195,6 +196,7 @@
             this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAdd.TabIndex = 37;
             this.btnAdd.Text = "درج";
+            this.btnAdd.Tooltip = "اضافه کردن یک ماشین به سیستم";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
@@ -210,6 +212,7 @@
             this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnUpdate.TabIndex = 39;
             this.btnUpdate.Text = "ویرایش";
+            this.btnUpdate.Tooltip = "ویرایش اطلاعات یک ماشین با توجه به آیدی";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // labelX7
@@ -476,10 +479,92 @@
             this.dataGridViewX1.TabIndex = 4;
             this.dataGridViewX1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellClick);
             // 
+            // cIDDataGridViewTextBoxColumn
+            // 
+            this.cIDDataGridViewTextBoxColumn.DataPropertyName = "c_ID";
+            this.cIDDataGridViewTextBoxColumn.HeaderText = "آیدی";
+            this.cIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cIDDataGridViewTextBoxColumn.Name = "cIDDataGridViewTextBoxColumn";
+            this.cIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // csystemDataGridViewTextBoxColumn
+            // 
+            this.csystemDataGridViewTextBoxColumn.DataPropertyName = "c_system";
+            this.csystemDataGridViewTextBoxColumn.HeaderText = "سیستم";
+            this.csystemDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.csystemDataGridViewTextBoxColumn.Name = "csystemDataGridViewTextBoxColumn";
+            this.csystemDataGridViewTextBoxColumn.ReadOnly = true;
+            this.csystemDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // cmodelDataGridViewTextBoxColumn
+            // 
+            this.cmodelDataGridViewTextBoxColumn.DataPropertyName = "c_model";
+            this.cmodelDataGridViewTextBoxColumn.HeaderText = "مدل";
+            this.cmodelDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cmodelDataGridViewTextBoxColumn.Name = "cmodelDataGridViewTextBoxColumn";
+            this.cmodelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cmodelDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ccolorDataGridViewTextBoxColumn
+            // 
+            this.ccolorDataGridViewTextBoxColumn.DataPropertyName = "c_color";
+            this.ccolorDataGridViewTextBoxColumn.HeaderText = "رنگ";
+            this.ccolorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ccolorDataGridViewTextBoxColumn.Name = "ccolorDataGridViewTextBoxColumn";
+            this.ccolorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ccolorDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // cnumbershDataGridViewTextBoxColumn
+            // 
+            this.cnumbershDataGridViewTextBoxColumn.DataPropertyName = "c_number_sh";
+            this.cnumbershDataGridViewTextBoxColumn.HeaderText = "شماره شهربانی";
+            this.cnumbershDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cnumbershDataGridViewTextBoxColumn.Name = "cnumbershDataGridViewTextBoxColumn";
+            this.cnumbershDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cnumbershDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // cmotorDataGridViewTextBoxColumn
+            // 
+            this.cmotorDataGridViewTextBoxColumn.DataPropertyName = "c_motor";
+            this.cmotorDataGridViewTextBoxColumn.HeaderText = "موتور";
+            this.cmotorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cmotorDataGridViewTextBoxColumn.Name = "cmotorDataGridViewTextBoxColumn";
+            this.cmotorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cmotorDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // cshasiDataGridViewTextBoxColumn
+            // 
+            this.cshasiDataGridViewTextBoxColumn.DataPropertyName = "c_shasi";
+            this.cshasiDataGridViewTextBoxColumn.HeaderText = "شماره شاسی";
+            this.cshasiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cshasiDataGridViewTextBoxColumn.Name = "cshasiDataGridViewTextBoxColumn";
+            this.cshasiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cshasiDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // cbateDataGridViewTextBoxColumn
+            // 
+            this.cbateDataGridViewTextBoxColumn.DataPropertyName = "c_bate";
+            this.cbateDataGridViewTextBoxColumn.HeaderText = "بیت";
+            this.cbateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cbateDataGridViewTextBoxColumn.Name = "cbateDataGridViewTextBoxColumn";
+            this.cbateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cbateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // carBindingSource
+            // 
+            this.carBindingSource.DataMember = "Car";
+            this.carBindingSource.DataSource = this.tvto2DataSet;
+            // 
+            // tvto2DataSet
+            // 
+            this.tvto2DataSet.DataSetName = "tvto2DataSet";
+            this.tvto2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.groupPanel2.Controls.Add(this.SystemSearch);
             this.groupPanel2.Controls.Add(this.IDSearch);
             this.groupPanel2.Controls.Add(this.labelX10);
@@ -494,9 +579,7 @@
             // 
             // 
             // 
-            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel2.Style.BackColorGradientAngle = 90;
-            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderBottomWidth = 1;
             this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -586,91 +669,9 @@
             this.labelX9.TabIndex = 17;
             this.labelX9.Text = "بر اساس آیدی";
             // 
-            // carBindingSource
-            // 
-            this.carBindingSource.DataMember = "Car";
-            this.carBindingSource.DataSource = this.tvto2DataSet;
-            // 
-            // tvto2DataSet
-            // 
-            this.tvto2DataSet.DataSetName = "tvto2DataSet";
-            this.tvto2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // carTableAdapter
             // 
             this.carTableAdapter.ClearBeforeFill = true;
-            // 
-            // cIDDataGridViewTextBoxColumn
-            // 
-            this.cIDDataGridViewTextBoxColumn.DataPropertyName = "c_ID";
-            this.cIDDataGridViewTextBoxColumn.HeaderText = "آیدی";
-            this.cIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cIDDataGridViewTextBoxColumn.Name = "cIDDataGridViewTextBoxColumn";
-            this.cIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // csystemDataGridViewTextBoxColumn
-            // 
-            this.csystemDataGridViewTextBoxColumn.DataPropertyName = "c_system";
-            this.csystemDataGridViewTextBoxColumn.HeaderText = "سیستم";
-            this.csystemDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.csystemDataGridViewTextBoxColumn.Name = "csystemDataGridViewTextBoxColumn";
-            this.csystemDataGridViewTextBoxColumn.ReadOnly = true;
-            this.csystemDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // cmodelDataGridViewTextBoxColumn
-            // 
-            this.cmodelDataGridViewTextBoxColumn.DataPropertyName = "c_model";
-            this.cmodelDataGridViewTextBoxColumn.HeaderText = "مدل";
-            this.cmodelDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cmodelDataGridViewTextBoxColumn.Name = "cmodelDataGridViewTextBoxColumn";
-            this.cmodelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cmodelDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ccolorDataGridViewTextBoxColumn
-            // 
-            this.ccolorDataGridViewTextBoxColumn.DataPropertyName = "c_color";
-            this.ccolorDataGridViewTextBoxColumn.HeaderText = "رنگ";
-            this.ccolorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ccolorDataGridViewTextBoxColumn.Name = "ccolorDataGridViewTextBoxColumn";
-            this.ccolorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ccolorDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // cnumbershDataGridViewTextBoxColumn
-            // 
-            this.cnumbershDataGridViewTextBoxColumn.DataPropertyName = "c_number_sh";
-            this.cnumbershDataGridViewTextBoxColumn.HeaderText = "شماره شهربانی";
-            this.cnumbershDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cnumbershDataGridViewTextBoxColumn.Name = "cnumbershDataGridViewTextBoxColumn";
-            this.cnumbershDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cnumbershDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // cmotorDataGridViewTextBoxColumn
-            // 
-            this.cmotorDataGridViewTextBoxColumn.DataPropertyName = "c_motor";
-            this.cmotorDataGridViewTextBoxColumn.HeaderText = "موتور";
-            this.cmotorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cmotorDataGridViewTextBoxColumn.Name = "cmotorDataGridViewTextBoxColumn";
-            this.cmotorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cmotorDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // cshasiDataGridViewTextBoxColumn
-            // 
-            this.cshasiDataGridViewTextBoxColumn.DataPropertyName = "c_shasi";
-            this.cshasiDataGridViewTextBoxColumn.HeaderText = "شماره شاسی";
-            this.cshasiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cshasiDataGridViewTextBoxColumn.Name = "cshasiDataGridViewTextBoxColumn";
-            this.cshasiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cshasiDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // cbateDataGridViewTextBoxColumn
-            // 
-            this.cbateDataGridViewTextBoxColumn.DataPropertyName = "c_bate";
-            this.cbateDataGridViewTextBoxColumn.HeaderText = "بیت";
-            this.cbateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cbateDataGridViewTextBoxColumn.Name = "cbateDataGridViewTextBoxColumn";
-            this.cbateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cbateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // car
             // 
@@ -693,10 +694,10 @@
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
-            this.groupPanel2.ResumeLayout(false);
-            this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).EndInit();
+            this.groupPanel2.ResumeLayout(false);
+            this.groupPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

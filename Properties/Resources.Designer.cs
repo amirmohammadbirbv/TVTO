@@ -63,9 +63,9 @@ namespace tvto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Untitled_3 {
+        internal static System.Drawing.Bitmap ic_search_black_24dp {
             get {
-                object obj = ResourceManager.GetObject("Untitled_3", resourceCulture);
+                object obj = ResourceManager.GetObject("ic_search_black_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -33,6 +33,15 @@ namespace tvto
         {
             // TODO: This line of code loads data into the 'tvto2DataSet.Car' table. You can move, or remove it, as needed.
             this.carTableAdapter.Fill(this.tvto2DataSet.Car);
+            if (!CurrentInfos.IsTheme)
+            {
+                AppInfo appInfo = new AppInfo();
+                groupPanel1.BackColor = appInfo.getBackColorByFile();
+                groupPanel1.ForeColor = appInfo.getFontColorByFile();
+
+                groupPanel2.BackColor = appInfo.getBackColorByFile();
+                groupPanel2.ForeColor = appInfo.getFontColorByFile();
+            }
 
         }
 

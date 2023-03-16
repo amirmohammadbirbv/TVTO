@@ -12,127 +12,160 @@ namespace tvto
     {
         internal AppInfo()
         {
-            if (!File.Exists("appInfo.txt"))
+            try
             {
-                File.Create("appInfo.txt").Close();
-                File.WriteAllText("appInfo.txt", " " + "\r\n" + " " + "\r\n" + " " + "\r\n" + " ");
+                if (!File.Exists("appInfo.txt"))
+                {
+                    File.Create("appInfo.txt").Close();
+                    File.WriteAllText("appInfo.txt", " " + "\r\n" + " " + "\r\n" + " " + "\r\n" + " ");
+                }
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
+        //set
         internal void changeFontColor(Color color)
         {
-            string[] ARGBCodes = new string[4];
-            string[] appLastInfos = new string[4];
-
-            appLastInfos = File.ReadAllLines("appInfo.txt");
-
-            ARGBCodes[0] = color.A.ToString();
-            ARGBCodes[1] = color.R.ToString();
-            ARGBCodes[2] = color.G.ToString();
-            ARGBCodes[3] = color.B.ToString();
-            appLastInfos[0] = ARGBCodes[0] + " " + ARGBCodes[1] + " " + ARGBCodes[2] + " " + ARGBCodes[3];
-
-            File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            try
+            {
+                string[] ARGBCodes = new string[4];
+                string[] appLastInfos = new string[4];
+                appLastInfos = File.ReadAllLines("appInfo.txt");
+                ARGBCodes[0] = color.A.ToString();
+                ARGBCodes[1] = color.R.ToString();
+                ARGBCodes[2] = color.G.ToString();
+                ARGBCodes[3] = color.B.ToString();
+                appLastInfos[0] = ARGBCodes[0] + " " + ARGBCodes[1] + " " + ARGBCodes[2] + " " + ARGBCodes[3];
+                File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         internal void changeBackColor(Color color)
         {
-            string[] ARGBCodes = new string[4];
-            string[] appLastInfos = new string[4];
-
-            appLastInfos = File.ReadAllLines("appInfo.txt");
-
-            ARGBCodes[0] = color.A.ToString();
-            ARGBCodes[1] = color.R.ToString();
-            ARGBCodes[2] = color.G.ToString();
-            ARGBCodes[3] = color.B.ToString();
-            appLastInfos[1] = ARGBCodes[0] + " " + ARGBCodes[1] + " " + ARGBCodes[2] + " " + ARGBCodes[3];
-
-            File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            try
+            {
+                string[] ARGBCodes = new string[4];
+                string[] appLastInfos = new string[4];
+                appLastInfos = File.ReadAllLines("appInfo.txt");
+                ARGBCodes[0] = color.A.ToString();
+                ARGBCodes[1] = color.R.ToString();
+                ARGBCodes[2] = color.G.ToString();
+                ARGBCodes[3] = color.B.ToString();
+                appLastInfos[1] = ARGBCodes[0] + " " + ARGBCodes[1] + " " + ARGBCodes[2] + " " + ARGBCodes[3];
+                File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         internal void changeimg(string imgPath)
         {
-            string[] appLastInfos = new string[4];
-            appLastInfos = File.ReadAllLines("appInfo.txt");
-            appLastInfos[2] = imgPath;
-            File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            try
+            {
+                string[] appLastInfos = new string[4];
+                appLastInfos = File.ReadAllLines("appInfo.txt");
+                appLastInfos[2] = imgPath;
+                File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         internal void changeFont(Font font)
         {
-            string[] fontItems = new string[2];
-            string[] appLastInfos = new string[4];
-            fontItems[0] = font.Name;
-            fontItems[1] = font.Size.ToString();
-            appLastInfos = File.ReadAllLines("appInfo.txt");
-            appLastInfos[3] = fontItems[0] + " " + fontItems[1];
-            File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
-            File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            try
+            {
+                string[] fontItems = new string[2];
+                string[] appLastInfos = new string[4];
+                fontItems[0] = font.Name;
+                fontItems[1] = font.Size.ToString();
+                appLastInfos = File.ReadAllLines("appInfo.txt");
+                appLastInfos[3] = fontItems[0] + " " + fontItems[1];
+                File.WriteAllText("appInfo.txt", appLastInfos[0] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[1] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[2] + "\r\n");
+                File.AppendAllText("appInfo.txt", appLastInfos[3]);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
-
+        //get
         internal Color getFontColorByFile()
         {
-            string[] allFile = File.ReadAllLines("appInfo.txt");
-            if (allFile[0] != " ")
+            try
             {
-                string[] argb = allFile[0].Split(' ');
-                return Color.FromArgb(int.Parse(argb[0]), int.Parse(argb[1]), int.Parse(argb[2]), int.Parse(argb[3]));
+                string[] allFile = File.ReadAllLines("appInfo.txt");
+                    string[] argb = allFile[0].Split(' ');
+                    return Color.FromArgb(int.Parse(argb[0]), int.Parse(argb[1]), int.Parse(argb[2]), int.Parse(argb[3]));
             }
-            else
+            catch (Exception e)
             {
-                return Color.FromArgb(0,0,0,0);
+                return Color.FromArgb(255, 0, 0, 0);
             }
         }
         internal Color getBackColorByFile()
         {
-            string[] allFile = File.ReadAllLines("appInfo.txt");
-            if (allFile[1] != " ")
+            try
             {
-                string[] argb = allFile[1].Split(' ');
-                return Color.FromArgb(int.Parse(argb[0]), int.Parse(argb[1]), int.Parse(argb[2]), int.Parse(argb[3]));
+                string[] allFile = File.ReadAllLines("appInfo.txt");
+                    string[] argb = allFile[1].Split(' ');
+                    return Color.FromArgb(int.Parse(argb[0]), int.Parse(argb[1]), int.Parse(argb[2]), int.Parse(argb[3]));
+                
             }
-            else
+            catch (Exception e)
             {
-                return Color.FromArgb(0, 0, 0, 0);
+                return Color.FromArgb(255,255, 255, 255);
             }
         }
         internal string getImageAdress()
         {
-            string[] allFile = File.ReadAllLines("appInfo.txt");
-            if (allFile[2] != " ")
+            try
             {
-                return allFile[2];
+                string[] allFile = File.ReadAllLines("appInfo.txt");
+                    return allFile[2];
             }
-            else
+            catch (Exception e)
             {
-                return "Untitled_3";
+                return " ";
             }
         }
         internal Font getFont()
         {
-            string[] allFile = File.ReadAllLines("appInfo.txt");
-            if (allFile[1] != " ")
+            try
             {
-                string[] font = allFile[3].Split(' ');
-                float size = float.Parse(font[font.Length-1]);
-                string fontName = "";
-                for (int i = 0; i < font.Length-1; i++)
-                {
-                    fontName+=font[i];
-                }
-                return new Font(fontName, size);
+                string[] allFile = File.ReadAllLines("appInfo.txt");
+                    string[] font = allFile[3].Split(' ');
+                    float size = float.Parse(font[font.Length - 1]);
+                    string fontName = "";
+                    for (int i = 0; i < font.Length - 1; i++)
+                    {
+                        fontName += font[i];
+                    }
+                    if (size > 24)
+                    return new Font(fontName, 24);
+                    else return new Font(fontName, size);
             }
-            else
+            catch (Exception e)
             {
-                return new Font("Arial", 22);
+                return new Font("Tahoma", 13);
             }
         }
     }

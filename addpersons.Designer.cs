@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addPerson));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cleaner = new DevComponents.DotNetBar.ButtonX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
@@ -79,8 +81,9 @@
             // 
             // groupPanel1
             // 
+            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.groupPanel1.Controls.Add(this.cleaner);
             this.groupPanel1.Controls.Add(this.labelX8);
             this.groupPanel1.Controls.Add(this.btnRemove);
@@ -111,9 +114,7 @@
             // 
             // 
             // 
-            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel1.Style.BackColorGradientAngle = 90;
-            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderBottomWidth = 1;
             this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -150,6 +151,7 @@
             this.cleaner.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cleaner.TabIndex = 9;
             this.cleaner.Text = "پاک کردن";
+            this.cleaner.Tooltip = "پاک کردن همه ی فیلد ها برای پر کردن دوباره";
             this.cleaner.Click += new System.EventHandler(this.cleaner_Click);
             // 
             // labelX8
@@ -181,6 +183,7 @@
             this.btnRemove.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnRemove.TabIndex = 11;
             this.btnRemove.Text = "حذف";
+            this.btnRemove.Tooltip = "برای حذف یک شخص از سیستم";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
@@ -196,6 +199,7 @@
             this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "درج";
+            this.btnAdd.Tooltip = "برای شخص جدید اضافه کرد";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
@@ -211,6 +215,7 @@
             this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "ویرایش";
+            this.btnUpdate.Tooltip = "ویرایش اطلاعات یک شخص با استفاده از آیدی";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // labelX7
@@ -231,11 +236,14 @@
             // 
             // txtFamily
             // 
+            this.txtFamily.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtFamily.Border.Class = "TextBoxBorder";
             this.txtFamily.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtFamily.DisabledBackColor = System.Drawing.Color.White;
+            this.txtFamily.ForeColor = System.Drawing.Color.Black;
             this.txtFamily.Location = new System.Drawing.Point(133, 10);
             this.txtFamily.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtFamily.Name = "txtFamily";
@@ -245,11 +253,14 @@
             // 
             // txtNCode
             // 
+            this.txtNCode.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtNCode.Border.Class = "TextBoxBorder";
             this.txtNCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtNCode.DisabledBackColor = System.Drawing.Color.White;
+            this.txtNCode.ForeColor = System.Drawing.Color.Black;
             this.txtNCode.Location = new System.Drawing.Point(133, 46);
             this.txtNCode.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtNCode.MaxLength = 10;
@@ -260,11 +271,14 @@
             // 
             // txtID
             // 
+            this.txtID.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtID.Border.Class = "TextBoxBorder";
             this.txtID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtID.DisabledBackColor = System.Drawing.Color.White;
+            this.txtID.ForeColor = System.Drawing.Color.Black;
             this.txtID.Location = new System.Drawing.Point(133, 82);
             this.txtID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtID.Name = "txtID";
@@ -274,11 +288,14 @@
             // 
             // txte_mail
             // 
+            this.txte_mail.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txte_mail.Border.Class = "TextBoxBorder";
             this.txte_mail.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txte_mail.DisabledBackColor = System.Drawing.Color.White;
+            this.txte_mail.ForeColor = System.Drawing.Color.Black;
             this.txte_mail.Location = new System.Drawing.Point(133, 118);
             this.txte_mail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txte_mail.Name = "txte_mail";
@@ -385,11 +402,14 @@
             // 
             // txtMobile
             // 
+            this.txtMobile.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtMobile.Border.Class = "TextBoxBorder";
             this.txtMobile.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMobile.DisabledBackColor = System.Drawing.Color.White;
+            this.txtMobile.ForeColor = System.Drawing.Color.Black;
             this.txtMobile.Location = new System.Drawing.Point(451, 119);
             this.txtMobile.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMobile.MaxLength = 11;
@@ -401,11 +421,14 @@
             // 
             // txtTel
             // 
+            this.txtTel.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtTel.Border.Class = "TextBoxBorder";
             this.txtTel.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTel.DisabledBackColor = System.Drawing.Color.White;
+            this.txtTel.ForeColor = System.Drawing.Color.Black;
             this.txtTel.Location = new System.Drawing.Point(451, 89);
             this.txtTel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTel.MaxLength = 11;
@@ -417,11 +440,14 @@
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtName.Border.Class = "TextBoxBorder";
             this.txtName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtName.DisabledBackColor = System.Drawing.Color.White;
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(451, 10);
             this.txtName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtName.Name = "txtName";
@@ -432,11 +458,14 @@
             // 
             // txtAddres
             // 
+            this.txtAddres.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtAddres.Border.Class = "TextBoxBorder";
             this.txtAddres.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtAddres.DisabledBackColor = System.Drawing.Color.White;
+            this.txtAddres.ForeColor = System.Drawing.Color.Black;
             this.txtAddres.Location = new System.Drawing.Point(451, 39);
             this.txtAddres.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAddres.Multiline = true;
@@ -457,6 +486,14 @@
             this.dataGridEmployee.AutoGenerateColumns = false;
             this.dataGridEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridEmployee.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.eIDDataGridViewTextBoxColumn,
@@ -468,21 +505,30 @@
             this.eaddressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.dataGridEmployee.DataSource = this.employeeBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridEmployee.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridEmployee.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridEmployee.EnableHeadersVisualStyles = false;
             this.dataGridEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridEmployee.Location = new System.Drawing.Point(0, 240);
             this.dataGridEmployee.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.dataGridEmployee.Name = "dataGridEmployee";
             this.dataGridEmployee.ReadOnly = true;
             this.dataGridEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridEmployee.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridEmployee.RowHeadersWidth = 51;
             this.dataGridEmployee.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridEmployee.Size = new System.Drawing.Size(707, 318);
@@ -573,6 +619,7 @@
             // 
             // groupPanel2
             // 
+            this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.nameSearch);
@@ -589,9 +636,7 @@
             // 
             // 
             // 
-            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel2.Style.BackColorGradientAngle = 90;
-            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderBottomWidth = 1;
             this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -619,12 +664,15 @@
             // 
             // nameSearch
             // 
+            this.nameSearch.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.nameSearch.Border.Class = "TextBoxBorder";
             this.nameSearch.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.nameSearch.DisabledBackColor = System.Drawing.Color.White;
             this.nameSearch.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameSearch.ForeColor = System.Drawing.Color.Black;
             this.nameSearch.Location = new System.Drawing.Point(29, 5);
             this.nameSearch.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.nameSearch.Name = "nameSearch";
@@ -635,12 +683,15 @@
             // 
             // codeSearch
             // 
+            this.codeSearch.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.codeSearch.Border.Class = "TextBoxBorder";
             this.codeSearch.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.codeSearch.DisabledBackColor = System.Drawing.Color.White;
             this.codeSearch.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codeSearch.ForeColor = System.Drawing.Color.Black;
             this.codeSearch.Location = new System.Drawing.Point(364, 6);
             this.codeSearch.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.codeSearch.Name = "codeSearch";

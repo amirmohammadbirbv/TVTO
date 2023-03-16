@@ -35,7 +35,9 @@ C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.c
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.csproj.CopyComplete
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.exe
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.pdb
-C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.setting.resources
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.addPerson.resources
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
 C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.User.resources
+C:\Users\amir mohammad-pc\OneDrive\Desktop\پروژه\tvto\tvto\obj\Debug\tvto.login.resources

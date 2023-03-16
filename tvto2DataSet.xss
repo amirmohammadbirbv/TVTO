@@ -7,24 +7,12 @@
 <DiagramLayout xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ex:showrelationlabel="False" ViewPortX="31" ViewPortY="70" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:Car" ZOrder="7" X="102" Y="86" Height="273" Width="189" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
-    <Shape ID="DesignTable:Employee" ZOrder="1" X="824" Y="132" Height="480" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
+    <Shape ID="DesignTable:Employee" ZOrder="3" X="824" Y="132" Height="480" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
     <Shape ID="DesignTable:R_car" ZOrder="6" X="517" Y="217" Height="388" Width="203" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="145" />
-    <Shape ID="DesignTable:User" ZOrder="5" X="229" Y="492" Height="181" Width="197" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
+    <Shape ID="DesignTable:User" ZOrder="1" X="249" Y="241" Height="457" Width="197" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="143" />
   </Shapes>
   <Connectors>
-    <Connector ID="DesignRelation:CarR_car" ZOrder="4" LineWidth="11">
-      <RoutePoints>
-        <Point>
-          <X>291</X>
-          <Y>291</Y>
-        </Point>
-        <Point>
-          <X>517</X>
-          <Y>291</Y>
-        </Point>
-      </RoutePoints>
-    </Connector>
-    <Connector ID="DesignRelation:EmployeeR_car" ZOrder="3" LineWidth="11">
+    <Connector ID="DesignRelation:EmployeeR_car" ZOrder="4" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>824</X>
@@ -36,15 +24,27 @@
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:UserR_car" ZOrder="2" LineWidth="11">
+    <Connector ID="DesignRelation:CarR_car" ZOrder="5" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>426</X>
-          <Y>514</Y>
+          <X>291</X>
+          <Y>291</Y>
         </Point>
         <Point>
           <X>517</X>
-          <Y>514</Y>
+          <Y>291</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:UserR_car" ZOrder="2" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>446</X>
+          <Y>454</Y>
+        </Point>
+        <Point>
+          <X>517</X>
+          <Y>454</Y>
         </Point>
       </RoutePoints>
     </Connector>

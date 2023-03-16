@@ -52,13 +52,13 @@
             this.rcarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tvto2DataSet = new tvto.tvto2DataSet();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.txtDID = new DevComponents.DotNetBar.Controls.MaskedTextBoxAdv();
             this.dataGridViewU = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.realNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.txtDID = new DevComponents.DotNetBar.Controls.MaskedTextBoxAdv();
             this.dataGridViewE = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,9 +80,9 @@
             this.cshasiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBoxUser = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxGiven = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxTaken = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.txtuser = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtEID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.cleaner = new DevComponents.DotNetBar.ButtonX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
@@ -94,6 +94,7 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.r_carTableAdapter = new tvto.tvto2DataSetTableAdapters.R_carTableAdapter();
             this.carTableAdapter = new tvto.tvto2DataSetTableAdapters.CarTableAdapter();
             this.employeeTableAdapter = new tvto.tvto2DataSetTableAdapters.EmployeeTableAdapter();
@@ -104,15 +105,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.tvto2DataSet)).BeginInit();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel2
             // 
+            this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.nameSearch);
@@ -127,9 +130,7 @@
             // 
             // 
             // 
-            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel2.Style.BackColorGradientAngle = 90;
-            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderBottomWidth = 1;
             this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -157,34 +158,40 @@
             // 
             // nameSearch
             // 
+            this.nameSearch.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.nameSearch.Border.Class = "TextBoxBorder";
             this.nameSearch.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.nameSearch.DisabledBackColor = System.Drawing.Color.White;
             this.nameSearch.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameSearch.ForeColor = System.Drawing.Color.Black;
             this.nameSearch.Location = new System.Drawing.Point(58, 4);
             this.nameSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nameSearch.Name = "nameSearch";
             this.nameSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.nameSearch.Size = new System.Drawing.Size(203, 26);
-            this.nameSearch.TabIndex = 15;
+            this.nameSearch.TabIndex = 12;
             this.nameSearch.TextChanged += new System.EventHandler(this.nameSearch_TextChanged);
             // 
             // codeSearch
             // 
+            this.codeSearch.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.codeSearch.Border.Class = "TextBoxBorder";
             this.codeSearch.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.codeSearch.DisabledBackColor = System.Drawing.Color.White;
             this.codeSearch.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codeSearch.ForeColor = System.Drawing.Color.Black;
             this.codeSearch.Location = new System.Drawing.Point(381, 4);
             this.codeSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.codeSearch.Name = "codeSearch";
             this.codeSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.codeSearch.Size = new System.Drawing.Size(203, 26);
-            this.codeSearch.TabIndex = 14;
+            this.codeSearch.TabIndex = 11;
             this.codeSearch.TextChanged += new System.EventHandler(this.codeSearch_TextChanged);
             // 
             // labelX10
@@ -342,16 +349,17 @@
             // 
             // groupPanel1
             // 
+            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.txtDID);
             this.groupPanel1.Controls.Add(this.dataGridViewU);
+            this.groupPanel1.Controls.Add(this.txtDID);
             this.groupPanel1.Controls.Add(this.dataGridViewE);
             this.groupPanel1.Controls.Add(this.comboBoxCar);
             this.groupPanel1.Controls.Add(this.dataGridViewCar);
-            this.groupPanel1.Controls.Add(this.comboBoxUser);
             this.groupPanel1.Controls.Add(this.comboBoxGiven);
             this.groupPanel1.Controls.Add(this.comboBoxTaken);
+            this.groupPanel1.Controls.Add(this.txtuser);
             this.groupPanel1.Controls.Add(this.txtEID);
             this.groupPanel1.Controls.Add(this.cleaner);
             this.groupPanel1.Controls.Add(this.labelX8);
@@ -373,9 +381,7 @@
             // 
             // 
             // 
-            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel1.Style.BackColorGradientAngle = 90;
-            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderBottomWidth = 1;
             this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -401,47 +407,31 @@
             this.groupPanel1.TabIndex = 14;
             this.groupPanel1.Text = "مشخصات پرسنل";
             // 
-            // txtDID
-            // 
-            // 
-            // 
-            // 
-            this.txtDID.BackgroundStyle.Class = "TextBoxBorder";
-            this.txtDID.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtDID.ButtonClear.Visible = true;
-            this.txtDID.Location = new System.Drawing.Point(486, 88);
-            this.txtDID.Mask = "##/##/####";
-            this.txtDID.Name = "txtDID";
-            this.txtDID.Size = new System.Drawing.Size(129, 23);
-            this.txtDID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.txtDID.TabIndex = 30;
-            this.txtDID.Text = "";
-            // 
             // dataGridViewU
             // 
             this.dataGridViewU.AutoGenerateColumns = false;
             this.dataGridViewU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewU.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn,
-            this.realNameDataGridViewTextBoxColumn});
-            this.dataGridViewU.DataSource = this.userBindingSource;
+            this.realNameDataGridViewTextBoxColumn,
+            this.imgDataGridViewTextBoxColumn});
+            this.dataGridViewU.DataSource = this.userBindingSource1;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewU.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewU.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dataGridViewU.Location = new System.Drawing.Point(0, 112);
+            this.dataGridViewU.Location = new System.Drawing.Point(3, 100);
             this.dataGridViewU.Name = "dataGridViewU";
             this.dataGridViewU.RowHeadersWidth = 51;
             this.dataGridViewU.RowTemplate.Height = 24;
-            this.dataGridViewU.Size = new System.Drawing.Size(28, 28);
-            this.dataGridViewU.TabIndex = 29;
+            this.dataGridViewU.Size = new System.Drawing.Size(28, 33);
+            this.dataGridViewU.TabIndex = 31;
             this.dataGridViewU.Visible = false;
             // 
             // iDDataGridViewTextBoxColumn
@@ -451,14 +441,6 @@
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "userName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "userName";
-            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            this.userNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // passwordDataGridViewTextBoxColumn
             // 
@@ -476,10 +458,34 @@
             this.realNameDataGridViewTextBoxColumn.Name = "realNameDataGridViewTextBoxColumn";
             this.realNameDataGridViewTextBoxColumn.Width = 125;
             // 
-            // userBindingSource
+            // imgDataGridViewTextBoxColumn
             // 
-            this.userBindingSource.DataMember = "User";
-            this.userBindingSource.DataSource = this.tvto2DataSet;
+            this.imgDataGridViewTextBoxColumn.DataPropertyName = "img";
+            this.imgDataGridViewTextBoxColumn.HeaderText = "img";
+            this.imgDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.imgDataGridViewTextBoxColumn.Name = "imgDataGridViewTextBoxColumn";
+            this.imgDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // userBindingSource1
+            // 
+            this.userBindingSource1.DataMember = "User";
+            this.userBindingSource1.DataSource = this.tvto2DataSet;
+            // 
+            // txtDID
+            // 
+            // 
+            // 
+            // 
+            this.txtDID.BackgroundStyle.Class = "TextBoxBorder";
+            this.txtDID.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDID.ButtonClear.Visible = true;
+            this.txtDID.Location = new System.Drawing.Point(486, 88);
+            this.txtDID.Mask = "####/##/##";
+            this.txtDID.Name = "txtDID";
+            this.txtDID.Size = new System.Drawing.Size(129, 23);
+            this.txtDID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.txtDID.TabIndex = 3;
+            this.txtDID.Text = "";
             // 
             // dataGridViewE
             // 
@@ -587,13 +593,14 @@
             this.comboBoxCar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxCar.DisplayMember = "Text";
             this.comboBoxCar.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxCar.ForeColor = System.Drawing.Color.Black;
             this.comboBoxCar.FormattingEnabled = true;
             this.comboBoxCar.ItemHeight = 19;
             this.comboBoxCar.Location = new System.Drawing.Point(486, 49);
             this.comboBoxCar.Name = "comboBoxCar";
             this.comboBoxCar.Size = new System.Drawing.Size(129, 25);
             this.comboBoxCar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxCar.TabIndex = 28;
+            this.comboBoxCar.TabIndex = 2;
             // 
             // dataGridViewCar
             // 
@@ -695,33 +702,20 @@
             this.carBindingSource.DataMember = "Car";
             this.carBindingSource.DataSource = this.tvto2DataSet;
             // 
-            // comboBoxUser
-            // 
-            this.comboBoxUser.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxUser.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxUser.DisplayMember = "Text";
-            this.comboBoxUser.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxUser.FormattingEnabled = true;
-            this.comboBoxUser.ItemHeight = 19;
-            this.comboBoxUser.Location = new System.Drawing.Point(151, 86);
-            this.comboBoxUser.Name = "comboBoxUser";
-            this.comboBoxUser.Size = new System.Drawing.Size(129, 25);
-            this.comboBoxUser.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxUser.TabIndex = 26;
-            // 
             // comboBoxGiven
             // 
             this.comboBoxGiven.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxGiven.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxGiven.DisplayMember = "Text";
             this.comboBoxGiven.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxGiven.ForeColor = System.Drawing.Color.Black;
             this.comboBoxGiven.FormattingEnabled = true;
             this.comboBoxGiven.ItemHeight = 19;
             this.comboBoxGiven.Location = new System.Drawing.Point(151, 49);
             this.comboBoxGiven.Name = "comboBoxGiven";
             this.comboBoxGiven.Size = new System.Drawing.Size(129, 25);
             this.comboBoxGiven.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxGiven.TabIndex = 25;
+            this.comboBoxGiven.TabIndex = 5;
             // 
             // comboBoxTaken
             // 
@@ -729,26 +723,47 @@
             this.comboBoxTaken.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxTaken.DisplayMember = "Text";
             this.comboBoxTaken.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxTaken.ForeColor = System.Drawing.Color.Black;
             this.comboBoxTaken.FormattingEnabled = true;
             this.comboBoxTaken.ItemHeight = 19;
             this.comboBoxTaken.Location = new System.Drawing.Point(151, 9);
             this.comboBoxTaken.Name = "comboBoxTaken";
             this.comboBoxTaken.Size = new System.Drawing.Size(129, 25);
             this.comboBoxTaken.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxTaken.TabIndex = 24;
+            this.comboBoxTaken.TabIndex = 4;
+            // 
+            // txtuser
+            // 
+            this.txtuser.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtuser.Border.Class = "TextBoxBorder";
+            this.txtuser.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtuser.DisabledBackColor = System.Drawing.Color.White;
+            this.txtuser.Enabled = false;
+            this.txtuser.ForeColor = System.Drawing.Color.Black;
+            this.txtuser.Location = new System.Drawing.Point(151, 87);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.PreventEnterBeep = true;
+            this.txtuser.Size = new System.Drawing.Size(129, 24);
+            this.txtuser.TabIndex = 1;
             // 
             // txtEID
             // 
+            this.txtEID.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtEID.Border.Class = "TextBoxBorder";
             this.txtEID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtEID.DisabledBackColor = System.Drawing.Color.White;
+            this.txtEID.ForeColor = System.Drawing.Color.Black;
             this.txtEID.Location = new System.Drawing.Point(486, 9);
             this.txtEID.Name = "txtEID";
             this.txtEID.PreventEnterBeep = true;
             this.txtEID.Size = new System.Drawing.Size(129, 24);
-            this.txtEID.TabIndex = 22;
+            this.txtEID.TabIndex = 1;
             // 
             // cleaner
             // 
@@ -758,8 +773,9 @@
             this.cleaner.Name = "cleaner";
             this.cleaner.Size = new System.Drawing.Size(78, 30);
             this.cleaner.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cleaner.TabIndex = 9;
+            this.cleaner.TabIndex = 7;
             this.cleaner.Text = "پاک کردن";
+            this.cleaner.Tooltip = "پاک کردن فیلد های عملیات";
             this.cleaner.Click += new System.EventHandler(this.cleaner_Click);
             // 
             // labelX8
@@ -789,8 +805,9 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(78, 28);
             this.btnRemove.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnRemove.TabIndex = 11;
+            this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "حذف";
+            this.btnRemove.Tooltip = "حذف عملیات با توجه به آیدی";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
@@ -804,8 +821,9 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(78, 28);
             this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnAdd.TabIndex = 10;
+            this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "درج";
+            this.btnAdd.Tooltip = "اضافه کردن عملیات جدید";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
@@ -819,8 +837,9 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(78, 28);
             this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "ویرایش";
+            this.btnUpdate.Tooltip = "ویرایش اطلاعات عملیات ";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // labelX5
@@ -903,6 +922,11 @@
             this.labelX1.TabIndex = 4;
             this.labelX1.Text = "آیدی عملیات";
             // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataMember = "User";
+            this.userBindingSource.DataSource = this.tvto2DataSet;
+            // 
             // r_carTableAdapter
             // 
             this.r_carTableAdapter.ClearBeforeFill = true;
@@ -943,11 +967,12 @@
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -976,7 +1001,6 @@
         private System.Windows.Forms.BindingSource rcarBindingSource;
         private tvto2DataSetTableAdapters.R_carTableAdapter r_carTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn eidDataGridViewTextBoxColumn;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxUser;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxGiven;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxTaken;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewCar;
@@ -1004,11 +1028,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource userBindingSource;
         private tvto2DataSetTableAdapters.UserTableAdapter userTableAdapter;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn realNameDataGridViewTextBoxColumn;
         private DevComponents.DotNetBar.Controls.MaskedTextBoxAdv txtDID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ridDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cidDataGridViewTextBoxColumn;
@@ -1016,5 +1035,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn useridDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn egidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn etidDataGridViewTextBoxColumn;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn realNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imgDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource userBindingSource1;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtuser;
     }
 }

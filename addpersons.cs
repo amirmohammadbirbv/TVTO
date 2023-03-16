@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevComponents.AdvTree;
+using DevComponents.DotNetBar;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,8 +71,16 @@ namespace tvto
         {
             // TODO: This line of code loads data into the 'tvto2DataSet.Employee' table. You can move, or remove it, as needed.
             this.employeeTableAdapter.Fill(this.tvto2DataSet.Employee);
-        }
 
+            if (!CurrentInfos.IsTheme)
+            {
+                AppInfo appInfo = new AppInfo();
+                    groupPanel1.BackColor = appInfo.getBackColorByFile();
+                    groupPanel1.ForeColor = appInfo.getFontColorByFile();
+                    groupPanel2.BackColor = appInfo.getBackColorByFile();
+                   groupPanel2.ForeColor = appInfo.getFontColorByFile();
+            }
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (

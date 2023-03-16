@@ -117,16 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="colorDialogFont.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnRemove.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABQUlEQVQ4T5WTvWoCQRSF50ksBDsRVBBs
+        FC0FOxEEGwUrG3s7awsLW0tfI5hCcCEqKQwR87MkD3Iz38WR3Y2jyYHD7szc79zZZcY47fp9eZvN5Dz0
+        6mM+l/1gEK/bdzryNRzKsdeTTbPpDWFtm89LkE5LUKvJ93Ip2jkcjTQgtAGf7fbVEOY22aw8p1KytSbk
+        qdsV8zqZaGcM/N5oyKFej4UkYcwY9lLg4FOlIsdiUa2gB442UDFBZ8BdLicHu0Wef4KdWCAAGCgKrjOZ
+        27ATBXSOwnc7R0VRctv/6n4Nxiu7q3WpdPv7kzBjILcDQh7L5d8hPljnrQkBfigU1LGQ03SqP82BUVgL
+        rHgHcgGYUFjDceRY+mAnF6LrZ+tR5kIE1aqG+GAn1vRH2joYvUwoXCwkaLXkZTz2wk6cf2phjDHmB3Sf
+        ghF37hJyAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABQUlEQVQ4T51TS0sCURidvxOtoqiNQZvC
+        Ta+NPTBLC2tUZlIGa6h2bVoEs0mCdHxk4mChhVlQgfQgopbR3zlxboMUiXk78C0u954H596r/Af7dQtH
+        dzbcpRyi2XWYT3EkGwZUW5MTcZ4rgmjcx7B2GZIX0MtxJJoRhBrzCBfDcuRIToN2o7bIpy/V7gWOH0qI
+        nX+RF2oz8tHpvlj3YbrixWpBlSfTlWR/OvA7eu31AolyEptVE6VH58cm10tOAOPlUTFto+t5A6kPC9b7
+        HsyrDdjNfOsQyyJxrDiMYGalfXQm2L7ewu7bjnggLItOnMkTL0ZyQ5hKT3RunVH1Mx3R22VRlr80h9mC
+        D55Mv5iuWucrY2SWxcgkDhz2iuLcI3+DMYPZkCD3HfTAkxoEP4673R0oQlcKSLl/B0V4Ox2LE1CUT2tC
+        6a6r48TuAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>523, 17</value>
+  </metadata>
+  <metadata name="userBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 17</value>
+  </metadata>
+  <metadata name="tvto2DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="colorDialogBackground.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>183, 17</value>
+  <metadata name="tvto2DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
-  <metadata name="fontDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>400, 17</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>529, 17</value>
+  <metadata name="userTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>346, 17</value>
   </metadata>
 </root>
